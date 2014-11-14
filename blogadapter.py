@@ -33,7 +33,7 @@ class blog:
 list = os.listdir(".")
 
 linklist = []
-ignorelist = ['\.', 'README.md', 'blogadapter.py']
+ignorelist = ['\.', 'README.md', 'blogadapter.py', 'sync.sh']
 
 output = open('README.md', 'w')
 
