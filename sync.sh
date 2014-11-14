@@ -22,13 +22,21 @@
 
 set -e
 
-echo 'Generate...'
-python blogadapter.py
+CUR_PATH=`pwd`
 
-echo 'Sync...'
+# 进入当前目录
+if [ ${0:0:1} = '/' ] || [ ${0:0:1} = '~' ]; then
+    DIR=$(dirname $0)
+else
+    DIR=$CUR_PATH/$(dirname $0)
+fi
+
+pushd $DIR
+
+python blogadapter.py
 git add .
 git commit -m 'sync'
 git push origin master
 
-echo 'Sync successed!!!'
+popd
 
