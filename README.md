@@ -1,5 +1,7 @@
 # Pawpaw's Blogs
-## 2014
+This repository is used to store my blogs
+## Usage
+* crontab -e             ```* * * * * * * yourdir/sync.sh```              * blog format                <pre>                    # Title                    Date(xxxx-xx-xx)                    ...                </pre>             ## 2014
 ##### 2014-11
 ###### [iOS 设备配置][]
 ###### [Opensips部署][]

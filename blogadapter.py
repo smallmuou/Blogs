@@ -38,6 +38,18 @@ ignorelist = ['\.', 'README.md', 'blogadapter.py', 'sync.sh']
 output = open('README.md', 'w')
 
 output.write('# Pawpaw\'s Blogs\n')
+output.write('This repository is used to store my blogs\n')
+output.write('## Usage\n')
+output.write('* crontab -e\
+             ```* * * * * * * yourdir/sync.sh```\
+              * blog format\
+                <pre>\
+                    # Title\
+                    Date(xxxx-xx-xx)\
+                    ...\
+                </pre>\
+             ')
+
 bloglist = []
 for file in list:
     match = False
