@@ -62,13 +62,13 @@ for obj in bloglist:
         lastyear = obj.date.tm_year
 
     if (lastmonth != obj.date.tm_mon ):
-        output.write('### ' + str(obj.date.tm_year) + '-'  + str(obj.date.tm_mon) + '\n')
+        output.write('##### ' + str(obj.date.tm_year) + '-'  + str(obj.date.tm_mon) + '\n')
         lastmonth = obj.date.tm_mon
-    print obj.date.tm_year 
-    print obj.date.tm_mon
-    output.write('#### [' + obj.title  + '][]\n')
-    linklist.append('[' + obj.title + ']' + obj.filename + '\n')
 
+    output.write('###### [' + obj.title  + '][]\n')
+    linklist.append('[' + obj.title + ']:' + obj.filename + '\n')
+
+    print(obj.filename)
 
 for link in linklist:
     output.write(link)
