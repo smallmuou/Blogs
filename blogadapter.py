@@ -40,15 +40,15 @@ output = open('README.md', 'w')
 output.write('# Pawpaw\'s Blogs\n')
 output.write('This repository is used to store my blogs\n')
 output.write('## Usage\n')
-output.write('* crontab -e\
-             ```* * * * * * * yourdir/sync.sh```\
-              * blog format\
-                <pre>\
-                    # Title\
-                    Date(xxxx-xx-xx)\
-                    ...\
-                </pre>\
-             ')
+output.write('* crontab -e\n\
+```* * * * * * * yourdir/sync.sh```\n\
+* blog format\n\
+    <pre>\n\
+    # Title\n\
+    Date(xxxx-xx-xx)\n\
+    ...\n\
+    </pre>\n\n\n\
+')
 
 bloglist = []
 for file in list:
