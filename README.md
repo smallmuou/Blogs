@@ -18,7 +18,7 @@
 ## 2013
 ##### 2013-10
 ###### [ iOS开发相关技巧][]
-[iOS 设备配置]:iOS 设备配置.md
+[iOS 设备配置]:iOS设备配置.md
 [Opensips部署]:opensips部署.md
 [ Phabricator]:phabricator.md
 [ SDP协议解读]:sdp.md
