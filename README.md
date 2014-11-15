@@ -17,7 +17,6 @@ This repository is used to store my blogs
 ###### [Opensips部署][]
 ###### [ Phabricator][]
 ###### [ SDP协议解读][]
-###### [ SDP协议解读][]
 ###### [ SIP协议分析][]
 ###### [ ReactiveCocoa][]
 ###### [ Asterisk 技术点][]
@@ -35,7 +34,6 @@ This repository is used to store my blogs
 [Opensips部署]:opensips部署.md
 [ Phabricator]:phabricator.md
 [ SDP协议解读]:sdp.md
-[ SDP协议解读]:sdp_1.md
 [ SIP协议分析]:sip协议分析.md
 [ ReactiveCocoa]:reactivecocoa.md
 [ Asterisk 技术点]:asterisk在macosx下编译.md
