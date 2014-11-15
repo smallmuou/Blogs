@@ -11,25 +11,32 @@ This repository is used to store my blogs
     </pre>
 
 
+
 ## 2014
-##### 2014-11
-###### [iOS 设备配置][]
-###### [Opensips部署][]
-###### [ Phabricator][]
-###### [ SDP协议解读][]
-###### [ SIP协议分析][]
-###### [ ReactiveCocoa][]
-###### [ Asterisk 技术点][]
-##### 2014-10
-###### [ ftp自动化登录及一键上传][]
-###### [ sed命令学习][]
-##### 2014-9
-###### [GIT服务器部署][]
-##### 2014-5
-###### [ PHP语法][]
+
+###### 2014-11
+* [iOS 设备配置][]
+* [Opensips部署][]
+* [ Phabricator][]
+* [ SDP协议解读][]
+* [ SIP协议分析][]
+* [ ReactiveCocoa][]
+* [ Asterisk 技术点][]
+
+###### 2014-10
+* [ ftp自动化登录及一键上传][]
+* [ sed命令学习][]
+
+###### 2014-9
+* [GIT服务器部署][]
+
+###### 2014-5
+* [ PHP语法][]
+
 ## 2013
-##### 2013-10
-###### [ iOS开发相关技巧][]
+
+###### 2013-10
+* [ iOS开发相关技巧][]
 [iOS 设备配置]:iOS设备配置.md
 [Opensips部署]:opensips部署.md
 [ Phabricator]:phabricator.md
