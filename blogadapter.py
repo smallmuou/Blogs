@@ -30,7 +30,9 @@ class blog:
         self.title = title
         self.date = date
 
-list = os.listdir("blogs")
+blogspath = 'blogs'
+
+list = os.listdir(blogspath)
 
 linklist = []
 ignorelist = ['\.', 'README.md', 'blogadapter.py', 'sync.sh']
@@ -41,7 +43,10 @@ output.write('# Pawpaw\'s Blogs\n')
 output.write('This repository is used to store my blogs\n')
 output.write('## Usage\n')
 output.write('* crontab -e\n\
-```* * * * * * * yourdir/sync.sh```\n\
+<pre>\n\
+* * * * * yourdir/sync.sh\n\
+</pre>\n\
+\n\
 * blog format\n\
     <pre>\n\
     # Title\n\
@@ -58,7 +63,7 @@ for file in list:
             match = True
             break
     if (match == False):
-        filename='blogs/'+str(file)
+        filename=blogspath + '/' +str(file)
         filefd = open(filename, 'r')
         blogname = filefd.readline()[1:-1]
         blogdate = time.strptime(filefd.readline()[:-1], '%Y-%m-%d')
