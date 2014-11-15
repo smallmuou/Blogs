@@ -34,7 +34,7 @@ fi
 pushd $DIR
 
 python blogadapter.py
-git add .
+git add --all .
 git commit -m 'sync'
 git push origin master
 
