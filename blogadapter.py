@@ -44,7 +44,7 @@ output.write('This repository is used to store my blogs\n')
 output.write('## Usage\n')
 output.write('* crontab -e\n\
     <pre>\n\
-    \* * * * * yourdir/sync.sh\n\
+    * * * * * yourdir/sync.sh\n\
     </pre>\n\
 \n\
 * blog format\n\
