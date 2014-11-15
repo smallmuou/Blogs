@@ -2,9 +2,9 @@
 This repository is used to store my blogs
 ## Usage
 * crontab -e
-<pre>
-* * * * * yourdir/sync.sh
-</pre>
+    <pre>
+    \* * * * * yourdir/sync.sh
+    </pre>
 
 * blog format
     <pre>
