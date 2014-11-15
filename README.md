@@ -37,15 +37,15 @@ This repository is used to store my blogs
 
 ###### 2013-10
 * [ iOS开发相关技巧][]
-[iOS 设备配置]:iOS设备配置.md
-[Opensips部署]:opensips部署.md
-[ Phabricator]:phabricator.md
-[ SDP协议解读]:sdp.md
-[ SIP协议分析]:sip协议分析.md
-[ ReactiveCocoa]:reactivecocoa.md
-[ Asterisk 技术点]:asterisk在macosx下编译.md
-[ ftp自动化登录及一键上传]:ftp自动化登录及一键上传.md
-[ sed命令学习]:sed_usage.md
-[GIT服务器部署]:git服务器部署.md
-[ PHP语法]:php语法.md
-[ iOS开发相关技巧]:ios开发相关技巧.md
+[iOS 设备配置]:blogs/iOS设备配置.md
+[Opensips部署]:blogs/opensips部署.md
+[ Phabricator]:blogs/phabricator.md
+[ SDP协议解读]:blogs/sdp.md
+[ SIP协议分析]:blogs/sip协议分析.md
+[ ReactiveCocoa]:blogs/reactivecocoa.md
+[ Asterisk 技术点]:blogs/asterisk在macosx下编译.md
+[ ftp自动化登录及一键上传]:blogs/ftp自动化登录及一键上传.md
+[ sed命令学习]:blogs/sed_usage.md
+[GIT服务器部署]:blogs/git服务器部署.md
+[ PHP语法]:blogs/php语法.md
+[ iOS开发相关技巧]:blogs/ios开发相关技巧.md

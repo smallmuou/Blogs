@@ -30,7 +30,7 @@ class blog:
         self.title = title
         self.date = date
 
-list = os.listdir(".")
+list = os.listdir("blogs")
 
 linklist = []
 ignorelist = ['\.', 'README.md', 'blogadapter.py', 'sync.sh']
@@ -58,10 +58,11 @@ for file in list:
             match = True
             break
     if (match == False):
-        filefd = open(file, 'r')
+        filename='blogs/'+str(file)
+        filefd = open(filename, 'r')
         blogname = filefd.readline()[1:-1]
         blogdate = time.strptime(filefd.readline()[:-1], '%Y-%m-%d')
-        bloglist.append(blog(str(file), blogname, blogdate))
+        bloglist.append(blog(filename, blogname, blogdate))
         filefd.close()
 
 # sorted newer to top
