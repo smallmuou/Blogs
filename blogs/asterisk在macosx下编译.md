@@ -101,11 +101,13 @@ Content-Length: 0
 ## SIP.conf
 * autocreatepeer=yes 允许自动创建节点
 * context=xx，指定拨号规则（定义在extension.conf中）
-* directmedia
+* directmedia 见canreinvite
 * directrtpsetup
 * canreinvite 重定向媒体流，在1.6.2后改为directmedia
 	* yes - allow RTP media direct 
-	* no - deny re-invites
+	```This means that this SIP is _always_ able to receive direct RTP media,from any other peer, regardless of IP address or network route.```
+	* no - deny re-invites(转发)
+	```This means that this SIP peer is not able to receive direct RTP media,from any other peer, regardless of IP address or network route.```
 	* nonat - allow reinvite when local, deny reinvite when NAT
 	* update - use UPDATE instead of INVITE
 	
@@ -121,4 +123,8 @@ Content-Length: 0
 	* comedia - enables RFC 3581 behavior if the remote side requests it and enables symmetric RTP support.
 	
 	* force_rport+comedia = yes
-	
+
+## UPDATE
+SIP的UPDATE（[RFC3311](https://tools.ietf.org/html/rfc3311)）消息是SIP扩展的一种机制，用以在通话尚未建立的时候更新媒体流状态的一种机制。
+
+INVITE --- UPDATE --- REINVITE
