@@ -104,12 +104,13 @@ Content-Length: 0
 * directmedia 见canreinvite
 * directrtpsetup
 * canreinvite 重定向媒体流，在1.6.2后改为directmedia
-	* yes - allow RTP media direct 
+	* yes - allow RTP media direct
 	```This means that this SIP is _always_ able to receive direct RTP media,from any other peer, regardless of IP address or network route.```
 	* no - deny re-invites(转发)
 	```This means that this SIP peer is not able to receive direct RTP media,from any other peer, regardless of IP address or network route.```
 	* nonat - allow reinvite when local, deny reinvite when NAT
 	* update - use UPDATE instead of INVITE
+	* update,nonat - use UPDATE when local, deny when NAT
 	
 * allow 允许编解码器
 * allowguest 允许来电
@@ -128,3 +129,13 @@ Content-Length: 0
 SIP的UPDATE（[RFC3311](https://tools.ietf.org/html/rfc3311)）消息是SIP扩展的一种机制，用以在通话尚未建立的时候更新媒体流状态的一种机制。
 
 INVITE --- UPDATE --- REINVITE
+
+## 会话流程
+```When SIP initiates the call, the INVITE message contains the information on where to send the media streams. Asterisk uses itself as the end-points of media streams when setting up the call. Once the call has been accepted, Asterisk sends another (re)INVITE message to the clients with the information necessary to have the two clients send the media streams directly to each other.```
+
+理解: 当SIP发起会话时，INVITE通过SDP携带媒体流传输需要的信息（IP、PORT），Asterisk会将自己作为媒体流接受者，一旦邀请被接受，Asterisk会发送带有媒体流信息的(re)INVITE给客户端，以便客户端之间建立P2P连接.
+当以下条件不会发送(re)INVITE:
+
+* canreinvite=NO
+* 客户端使用不同的编解码器
+* Dial包含 ''t'', ''T", "h", "H", "w", "W" or "L" (with multiple arguments) 
