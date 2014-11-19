@@ -20,6 +20,9 @@
 * The Unarchiver - rar解压工具
 * Evernote - 日志
 * Firefox - 浏览器
+	* Firebug - 网页分析插件
+	* Vimperator - 类vim操作
+	![image](http://pic002.cnblogs.com/images/2010/175824/2010110310103424.jpg)
 * MPlayerX - 媒体播放器
 * Alfred - 快速查找启动应用程序
 * Wireshark - 抓包工具
