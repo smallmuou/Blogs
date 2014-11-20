@@ -36,3 +36,5 @@
 * clang - 编译工具
 * traceroute - 查看路由路线
 * lsof - 查看端口使用情况
+* svn - 版本管理工具
+* git - 版本管理工具
