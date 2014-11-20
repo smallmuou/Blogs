@@ -15,6 +15,7 @@
 
 ## 开发类
 * XCode - iOS APP和Mac软件开发工具
+* Cocoapod
 
 ## 工具类
 * The Unarchiver - rar解压工具
