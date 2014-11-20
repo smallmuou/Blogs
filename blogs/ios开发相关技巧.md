@@ -16,8 +16,14 @@
 
 #### 第三方库
 
-名称|用途|地址
-|
+|| *Year* || *Temperature (low)* || *Temperature (high)* ||
+|| 1900 || -10 || 25 ||
+|| 1910 || -15 || 30 ||
+|| 1920 || -10 || 32 ||
+
+
+||名称||用途||地址
+||
 CocoaLumberjack|日志打印|https://github.com/CocoaLumberjack/CocoaLumberjack
 CocoaHTTPServer|HTTP服务器|https://github.com/robbiehanson/CocoaHTTPServer
 TMCache|Disk&Memory Cache管理|https://github.com/tumblr/TMCache
@@ -36,6 +42,7 @@ SDWebImage|支持web image的显示及cache|https://github.com/rs/SDWebImage
 SVPullToRefresh|下拉刷新|https://github.com/samvermette/SVPullToRefresh
 cocos2d|游戏引擎|https://github.com/cocos2d/cocos2d-iphone
 OpenUDID|UDID|https://github.com/ylechelle/OpenUDID
+InAppSettingsKit|设置|https://github.com/futuretap/InAppSettingsKit
 
 
 #### 代码片段
